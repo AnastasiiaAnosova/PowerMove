@@ -1,4 +1,365 @@
+:root {
+    --accent-color: #FF7F11;
+    --primary-color: #333333;
+    --text-color: #494848;
+    --secondary-color: #f0f0f0;
+    --main-font-family: "Anta",
+        sans-serif;
+    --accent-font-family: "Audiowide",
+        serif;
+    --text-font-family: "Space Grotesk", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+.img {
+    border-radius: 8px;
+}
+
+.header {
+    background-color: var(--primary-color);
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    margin-left: 60px;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.logo-svg .logo-path {
+    fill: transparent;
+    transition: fill 0.3s ease;
+}
+
+.logo:hover .logo-path {
+    fill: #FF7F11;
+}
+
+.menu-list {
+    margin-left: 40px;
+    display: flex;
+    gap: 18px;
+}
+
+.menu-list-link {
+    color: var(--accent-color);
+}
+
+.menu-list-link:hover, .menu-list-link:focus {
+    padding: 4px;
+    border-radius: 16px;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+.sign-login-links {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.login-link {
+    padding: 6px;
+    border-radius: 16px;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+.login-link:hover, .login-link:focus {
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+}
+
+.sign-link {
+    margin-left: 14px;
+}
+
 .hero-section {
-    height: 500px;
-    background-image: url('/imgs/powermove.jpg');
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+}
+
+.main-title {
+    padding-top: 80px;
+    font-family: var(--accent-font-family);
+    font-size: 32px;
+    word-spacing: 2px;
+}
+
+.main-text {
+    margin-top: 20px;
+    font-size: 26px;
+    width: 980px;
+    text-align: center;
+    /* background-color: var(--text-color); */
+}
+
+.main-buttons {
+    font-size: 24px;
+    margin-top: 60px;
+}
+
+.button {
+    padding: 6px;
+    border-radius: 16px;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+.button:hover, .button:focus {
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+}
+
+.main-buttons .button:last-child {
+    margin-left: 24px;
+}
+
+.our-description-section {
+    height: 430px;
+    background-color: var(--secondary-color);
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.secondary-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.text {
+    color: var(--text-color);
+}
+
+.list-description {
+    color: var(--text-color);
+    margin-top: 12px;
+    list-style: inherit;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.button-detail {
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--accent-color);
+    padding: 6px;
+    border-radius: 16px;
+    color: var(--accent-color);
+    margin-left: 30px;
+}
+
+.button-detail:hover, .button-detail:focus {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+.courses-section {
+    height: 880px;
+    background-color: var(--primary-color);
+    padding-top: 30px;
+    padding-left: 40px;
+    color: var(--secondary-color);
+    /* text-align: center; */
+}
+
+.title-dark {
+    color: var(--accent-color);
+}
+
+.list-courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-left: 40px;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.list-courses-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 350px;
+    background-color: var(--text-color);
+    border-radius: 12px;
+}
+
+.list-courses-title {
+    margin-top: 5px;
+}
+
+.list-courses-text {
+    text-align: center;
+    width: 320px;
+    font-size: 18px;
+    font-family: var(--text-font-family);
+}
+
+.list-courses-img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.center-link {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-section {
+    height: 600px;
+    background-color: var(--secondary-color);
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.blog-list-text {
+    margin-bottom: 6px;
+}
+
+.blog-list-link {
+    color: var(--accent-color);
+}
+
+.blog-list-link:hover, .blog-list-link:focus {
+    padding: 4px;
+    border-radius: 16px;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+.blog-list-text {
+    font-family: var(--text-font-family);
+}
+
+/* .connect-section {
+    height: 400px;
+    background-color: var(--primary-color);
+    padding-top: 30px;
+    padding-left: 40px;
+    color: var(--secondary-color);
+    display: flex;
+    gap: 40px;
+}
+
+.connect-description {
+    width: 500px;
+}
+
+.connect-text {
+    margin-top: 20px;
+    font-size: 26px;
+    width: 980px;
+} */
+
+.connect-section {
+    height: auto;
+    /* Dynamická výška podle obsahu */
+    padding: 40px 20px;
+    /* Vyvážené odsazení pro vršek i boky */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    /* Vertikální zarovnání */
+    justify-content: space-between;
+    /* Prostor mezi textem a obrázkem */
+    gap: 20px;
+    /* Menší mezera mezi prvky */
+    flex-wrap: wrap;
+    /* Zajišťuje, že obsah bude dobře fungovat na menších obrazovkách */
+}
+
+.connect-description {
+    max-width: 500px;
+    /* Omezte šířku textového bloku */
+    flex: 1;
+    /* Umožní adaptivní velikost */
+}
+
+.connect-text {
+    margin-top: 20px;
+    font-size: 20px;
+    /* Upravte velikost pro lepší čitelnost */
+    line-height: 1.5;
+    /* Příjemnější mezera mezi řádky */
+}
+
+.button {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+}
+
+.img {
+    max-width: 600px;
+    /* Maximální šířka obrázku */
+    width: 100%;
+    /* Adaptivní šířka */
+    border-radius: 8px;
+    /* Kulaté rohy obrázku */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Jemný stín pro lepší efekt */
+    object-fit: cover;
+    /* Zajistí správný poměr obrázku */
 }

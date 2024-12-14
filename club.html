@@ -4,9 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About PowerMove</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Audiowide&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <nav class="menu">
+        <a class="logo" href="/index.html">
+          <svg
+            class="logo-svg"
+            width="40"
+            height="40"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="logo-path"
+              d="M21.37 36C22.82 30.75 27.89 27 33.73 27.62C39.29 28.21 43.71 32.9 43.99 38.48C44.06 39.95 43.86 41.36 43.43 42.67C43.17 43.47 42.39 44 41.54 44H11.7584C6.71004 44 2.92371 39.3814 3.91377 34.4311L9.99994 4H21.9999L25.9999 11L17.43 17.13L14.9999 14"
+              stroke="#FF7F11"
+              stroke-width="2"
+              stroke-miterlimit="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              class="logo-path"
+              d="M17.4399 17.13L22 34"
+              stroke="#FF7F11"
+              stroke-width="2"
+              stroke-miterlimit="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="/club.html">O nás</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="/kurzy.html">Kurzy</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="/vyziva.html">Jídelníček</a>
+          </li>
+        </ul>
+        <div class="sign-login-links">
+          <a class="login-link" href="/login.html">Přihlásit se</a>
+          <a class="menu-list-link sign-link" href="/sign.html"
+            >Zaregistrovat se</a
+          >
+        </div>
+      </nav>
+    </header>
     <main>
       <section class="histori">
         <h1>PowerMove</h1>
@@ -19,7 +78,7 @@
           hmoty, nebo prosté radosti z aktivního života
         </p>
         <p>Historie našeho klubu</p>
-        PowerMove Klub vznikl v roce 2023 z jednoduché vize – vytvořit prostor,
+        PowerMove Klub vznikl v roce 2022 z jednoduché vize – vytvořit prostor,
         kde se lidé budou cítit motivováni, podporováni a zároveň součástí
         komunity. Začali jsme s malým týmem nadšenců a jednou tělocvičnou, ale
         díky odhodlání a vášni jsme dnes místem, které spojuje stovky sportovců
@@ -36,34 +95,46 @@
         </p>
         <ul>
           <li>
-            <img src="" alt="" />
-            <h3></h3>
-            <p>Specialista na silový trénink a výživu</p>
+            <img src="" alt="Martin Novák je trenér pro silový trénink" />
+            <h3>Martin Novák</h3>
+            <p>Specialista na silový trénink a budování svalové hmoty</p>
           </li>
           <li>
-            <img src="" alt="" />
-            <h3></h3>
-            <p>Expert na dětskou gymnastiku a koordinaci</p>
+            <img
+              src=""
+              alt="Petra Dvořáková je trenérka pro dětskou gymnastiku"
+            />
+            <h3>Petra Dvořáková</h3>
+            <p>Expertka na dětskou gymnastiku a rozvoj koordinace</p>
           </li>
           <li>
-            <img src="" alt="" />
-            <h3></h3>
-            <p>Certifikovaný instruktor jógy a funkčního tréninku</p>
+            <img
+              src=""
+              alt="Tomáš Černý je instruktor jógy a funkčního tréninku"
+            />
+            <h3>Tomáš Černý</h3>
+            <p>
+              Instruktor jógy a funkčního tréninku, zaměřený na flexibilitu a
+              core
+            </p>
           </li>
           <li>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
+            <img src="" alt="Specialista na kondiční trénink" />
+            <h3>Jana Hlaváčová</h3>
+            <p>Odbornice na kardio trénink a zlepšení celkové kondice</p>
           </li>
           <li>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
+            <img src="" alt="Trenér pro bojové sporty" />
+            <h3>David Kučera</h3>
+            <p>Trenér bojových sportů, včetně boxu a kickboxu</p>
           </li>
           <li>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
+            <img src="" alt="Nutriční specialista" />
+            <h3>Kateřina Malá</h3>
+            <p>
+              Nutriční specialistka, která vám pomůže sestavit ideální
+              jídelníček
+            </p>
           </li>
         </ul>
         <p>
@@ -79,37 +150,48 @@
           individuální přístup, podporu členů a vytváření přátelského prostředí,
           kde se budete cítit dobře
         </p>
-        <p>Recenze</p>
+        <h2>Co o nás říkají naši členové</h2>
         <ul>
           <li>
             <p>
               Díky PowerMove Klubu jsem zlepšil svou kondici a našel nové
               přátele. Trenéři jsou skvělí a vždy mě motivují k lepším výkonům!
             </p>
-            <p>Matrin Mladý</p>
+            <p>Martin Mladý, člen klubu 2 roky</p>
           </li>
           <li>
             <p>
-              Naše dcera navštěvuje dětskou gymnastiku a pokaždé odchází
-              nadšená. Moc děkujeme za skvělý přístup!
+              Naše dcera miluje dětskou gymnastiku a pokaždé se těší na další
+              trénink. Vidíme na ní velké pokroky a hlavně radost z pohybu. Moc
+              děkujeme za skvělý přístup!
             </p>
-            <p>Petra Král</p>
+            <p>Petra Králová, maminka malé gymnastky</p>
           </li>
           <li>
-            <p></p>
-            <p></p>
+            <p>
+              Po operaci kolene jsem hledala místo, kde by mi pomohli s návratem
+              do formy. PowerMove Klub byl skvělou volbou! Individuální přístup
+              a rehabilitační cvičení mi umožnily rychlý návrat ke sportu.
+            </p>
+            <p>Jana Novotná, členka klubu</p>
           </li>
           <li>
-            <p></p>
-            <p></p>
+            <p>
+              Jsem nadšený z kurzů kickboxu! David je výborný trenér, který
+              dokáže vytvořit přátelskou atmosféru, ale zároveň mě posouvá
+              každým tréninkem dál.
+            </p>
+            <p>Tomáš Vlček, člen klubu 1 rok</p>
           </li>
           <li>
-            <p></p>
-            <p></p>
+            <p>
+              PowerMove Klub je místo, kde se cítím jako doma. Kombinace
+              kvalitních tréninků, přátelské komunity a moderního vybavení mě
+              přesvědčila, že jsem tu správně.
+            </p>
+            <p>Kateřina Horáková, členka klubu 2 roky</p>
           </li>
         </ul>
-      </section>
-      <section>
         <p>
           Přidejte se k PowerMove Klubu ještě dnes a objevte radost z pohybu!
           Pro více informací nás neváhejte kontaktovat

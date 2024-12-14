@@ -4,14 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PowerMove</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Audiowide&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <nav class="menu">
-        <a class="logo" href="./index.html"
-          ><img src="./imgs/logo.svg" alt="Logo Klubu" width="40" height="40"
-        /></a>
+        <a class="logo" href="/index.html">
+          <svg
+            class="logo-svg"
+            width="40"
+            height="40"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="logo-path"
+              d="M21.37 36C22.82 30.75 27.89 27 33.73 27.62C39.29 28.21 43.71 32.9 43.99 38.48C44.06 39.95 43.86 41.36 43.43 42.67C43.17 43.47 42.39 44 41.54 44H11.7584C6.71004 44 2.92371 39.3814 3.91377 34.4311L9.99994 4H21.9999L25.9999 11L17.43 17.13L14.9999 14"
+              stroke="#FF7F11"
+              stroke-width="2"
+              stroke-miterlimit="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              class="logo-path"
+              d="M17.4399 17.13L22 34"
+              stroke="#FF7F11"
+              stroke-width="2"
+              stroke-miterlimit="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
         <ul class="menu-list">
           <li class="menu-list-item">
             <a class="menu-list-link" href="/club.html">O nás</a>
@@ -23,36 +55,40 @@
             <a class="menu-list-link" href="/blog.html">Blog</a>
           </li>
           <li class="menu-list-item">
-            <a class="menu-list-link" href="/vyziva.html">Výživa</a>
+            <a class="menu-list-link" href="/vyziva.html">Jídelníček</a>
           </li>
-          <li class="menu-list-item"><a class="menu-list-link" href=""></a></li>
         </ul>
+        <div class="sign-login-links">
+          <a class="login-link" href="/login.html">Přihlásit se</a>
+          <a class="menu-list-link sign-link" href="/sign.html"
+            >Zaregistrovat se</a
+          >
+        </div>
       </nav>
-      <button type="submit">Přihlásit se</button>
     </header>
     <main class="main-section">
       <section class="hero-section">
-        <h1>
+        <h1 class="main-title">
           Pohyb je síla! Připoj se k <span>PowerMove Klubu</span> a posuň své
           limity
         </h1>
-        <p>
+        <p class="main-text">
           Ať už chceš zhubnout, nabrat svaly, nebo jen zlepšit kondici, máme
           kurzy šité na míru pro každého. Pro dospělé i malé sportovce!
         </p>
-        <div>
-          <button type="button">Začít hned teď</button>
-          <a href="" class="button">Zjistit více o kurzech</a>
+        <div class="main-buttons">
+          <a href="/sign.html" class="button">Začít hned teď</a>
+          <a href="/kurzy.html" class="button">Zjistit více o kurzech</a>
         </div>
       </section>
       <section class="our-description-section">
-        <h2>Proč PowerMove Klub?</h2>
-        <p>
+        <h2 class="secondary-title">Proč PowerMove Klub?</h2>
+        <p class="text">
           Nabízíme kurzy pro dospělé i děti pod vedením zkušených trenérů.
           Podpoříme tě na cestě za tvými cíli, ať už jde o zlepšení kondice,
           nabírání svalů nebo zdravý životní styl
         </p>
-        <ul>
+        <ul class="list-description">
           <li>
             <p>Profesionální trenéři s individuálním přístupem</p>
           </li>
@@ -76,56 +112,150 @@
             <p>Pravidelné sportovní akce a turnaje</p>
           </li>
         </ul>
-
-        <!-- vede na stránku „O nás -->
-        <a href="" class="button">Přečíst více o klubu</a>
+        <a href="/club.html" class="button-detail">Přečíst více o klubu</a>
       </section>
-      <section>
-        <h2>Naše kurzy a programy</h2>
-        <ul>
-          <li>
-            <h3>Fitness pro dospělé</h3>
-            <img src="./imgs/kurzy/fitness.jpg" alt="" width="300" />
+      <section class="courses-section">
+        <h2 class="secondary-title title-dark">Naše kurzy a programy</h2>
+        <ul class="list-courses">
+          <li class="list-courses-item">
+            <h3 class="list-courses-title">Fitness pro dospělé</h3>
+            <img
+              class="list-courses-img"
+              src="/imgs/kurzy/fitness.jpg"
+              alt="Fitness trénink pro dospělé"
+              width="300"
+            />
+            <p class="list-courses-text">
+              Zlepšete svou kondici, posilněte tělo a načerpejte energii pod
+              vedením zkušených trenérů. Vhodné pro začátečníky i pokročilé
+            </p>
           </li>
-          <li>
-            <h3>Dětská gymnastika</h3>
-            <img src="" alt="" />
+          <li class="list-courses-item">
+            <h3 class="list-courses-title">Dětská gymnastika</h3>
+            <img
+              class="list-courses-img"
+              src="/imgs/kurzy/gymnastics.jpg"
+              alt="Dětská gymnastika"
+              width="300"
+            />
+            <p class="list-courses-text">
+              Rozvoj koordinace, flexibility a základních pohybových dovedností
+              hravou formou pro děti od 5 let
+            </p>
           </li>
-          <li>
-            <h3>Silový trénink</h3>
-            <img src="" alt="" />
+          <li class="list-courses-item">
+            <h3 class="list-courses-title">Silový trénink</h3>
+            <img
+              class="list-courses-img"
+              src="/imgs/kurzy/silove.webp"
+              alt="Silový trénink"
+              width="300"
+            />
+            <p class="list-courses-text">
+              Zaměřte se na budování svalové hmoty, zlepšení síly a techniky pod
+              dohledem specialistů
+            </p>
           </li>
-          <li>
-            <h3></h3>
+          <li class="list-courses-item">
+            <h3 class="list-courses-title">Jóga a relaxace</h3>
+            <img
+              class="list-courses-img"
+              src="/imgs/kurzy/yoga.jpg"
+              alt="Jóga a relaxace"
+              width="300"
+            />
+            <p class="list-courses-text">
+              Objevte harmonii těla a mysli prostřednictvím jógy, relaxačních
+              technik a dechových cvičení
+            </p>
+          </li>
+          <li class="list-courses-item">
+            <h3 class="list-courses-title">Bojové sporty</h3>
+            <img
+              class="list-courses-img"
+              src="/imgs/kurzy/kickbox.jpg"
+              alt="Bojové sporty"
+              width="300"
+            />
+            <p class="list-courses-text">
+              Tréninky boxu, kickboxu a dalších bojových disciplín pro posílení
+              fyzické kondice, sebedůvěry a výdrže
+            </p>
           </li>
         </ul>
-        <a href="" class="button">Zobrazit všechny kurzy</a>
+        <div class="center-link">
+          <a href="/kurzy.html" class="button-detail">Zobrazit všechny kurzy</a>
+        </div>
       </section>
-      <section>
-        <h2>Úspěchy našich členů</h2>
-        <p>Inspiruj se našimi úspěchy</p>
-      </section>
-      <section>
-        <h2>Blog a novinky</h2>
-        <p>Co je nového?</p>
-        <ul>
-          <li>
-            <h3></h3>
-            <p></p>
+      <section class="blog-section">
+        <h2 class="secondary-title">Blog a novinky | Co je nového?</h2>
+        <ul class="blog-list">
+          <li class="blog-list-item">
+            <h3 class="blog-list-title">
+              5 tipů, jak si udržet motivaci ke cvičení
+            </h3>
+            <p class="text blog-list-text">
+              Motivace je klíčem k úspěchu! Pravidelná sportovní aktivita dokáže
+              snížit chronický stres, míru úzkosti, příznaky deprese, zdravotní
+              rizika i tělesnou hmotnost, a zároveň zlepšit náladu, kognitivní
+              funkce, kvalitu spánku, imunitní systém, hustotu kostí, svalovou
+              hmotu, flexibilitu a rovnováhu
+            </p>
+            <a
+              class="blog-list-link"
+              href="https://gymbeam.cz/blog/5-tipu-diky-kterym-zustanete-aktivni-motivovani-a-neprestanete-cvicit-ani-doma/#5_kroku_ktere_vam_pomohou_udrzet_si_motivaci_ke_cviceni_a_sportovat_i_doma"
+              >Číst více</a
+            >
           </li>
-          <li>
-            <h3></h3>
-            <p></p>
+          <li class="blog-list-item">
+            <h3 class="blog-list-title">
+              Proč je důležité zapojit děti do sportu
+            </h3>
+            <p class="text blog-list-text">
+              Pohyb není jen zdravý, ale také učí děti disciplíně a týmové
+              spolupráci. Pravidelný pohyb propojuje funkci všech systémů v těle
+              a učí je pracovat úsporně a s dostatečnou rezervou pro vyšší výkon
+              v budoucnu. Přiměřené cvičení tlumí vyplavování stresových hormonů
+              a pomáhá dosáhnout lepší rovnováhy, nálady a pohody
+            </p>
+            <a
+              class="blog-list-link"
+              href="https://www.olympijskytym.cz/article/6-duvodu-proc-maji-deti-sportovat-aneb-kdyz-nemuzete-zmacknout-tlacitko-restart"
+              >Číst více</a
+            >
+          </li>
+          <li class="blog-list-item">
+            <h3 class="blog-list-title">
+              Sport a dlouhověkost - který sport je nejlepší?
+            </h3>
+            <p class="text blog-list-text">
+              Nové poznatky ovšem naznačují, že vliv na zdraví a délku aktivního
+              života má nejen intenzita či doba cvičení, ale i další faktory
+              včetně sociálních interakcí
+            </p>
+            <a
+              class="blog-list-link"
+              href="https://euc.cz/clanky-a-novinky/clanky/sport-a-dlouhovekost-ktery-sport-je-nejlepsi/"
+              >Číst více</a
+            >
           </li>
         </ul>
-        <a href="" class="button">Číst všechny články</a>
+        <div class="center-link">
+          <a href="/blog" class="button-detail">Číst všechny články</a>
+        </div>
       </section>
-      <section>
-        <p>Připoj se k nám</p>
-        <p>
-          Začni svou cestu s námi ještě dnes! Registrace je rychlá a jednoduchá
-        </p>
-        <button>Zaregistrovat se</button>
+      <section class="connect-section">
+        <div class="connect-description">
+          <p class="secondary-title title-dark">Připoj se k nám!</p>
+          <p class="connect-text">Začni svou cestu s námi ještě dnes</p>
+          <a href="/sign.html" class="button">Zaregistrovat se</a>
+        </div>
+        <img
+          class="img"
+          src="/imgs/powermove.jpg"
+          alt="PowerMove klub"
+          width="600"
+        />
       </section>
     </main>
     <footer class="footer">
@@ -184,6 +314,7 @@
           /></a>
         </li>
       </ul>
+      <p>&copy; 2024 PowerMove Klub. Všechna práva vyhrazena.</p>
     </footer>
   </body>
 </html>

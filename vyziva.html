@@ -3,7 +3,189 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Jídelníček PowerMove</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Audiowide&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <a class="logo" href="/index.html">
+          <svg
+            class="logo-svg"
+            width="40"
+            height="40"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="logo-path"
+              d="M21.37 36C22.82 30.75 27.89 27 33.73 27.62C39.29 28.21 43.71 32.9 43.99 38.48C44.06 39.95 43.86 41.36 43.43 42.67C43.17 43.47 42.39 44 41.54 44H11.7584C6.71004 44 2.92371 39.3814 3.91377 34.4311L9.99994 4H21.9999L25.9999 11L17.43 17.13L14.9999 14"
+              stroke="#FF7F11"
+              stroke-width="2"
+              stroke-miterlimit="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              class="logo-path"
+              d="M17.4399 17.13L22 34"
+              stroke="#FF7F11"
+              stroke-width="2"
+              stroke-miterlimit="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="/club.html">O nás</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="/kurzy.html">Kurzy</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="/vyziva.html">Jídelníček</a>
+          </li>
+        </ul>
+        <div class="sign-login-links">
+          <a class="login-link" href="/login.html">Přihlásit se</a>
+          <a class="menu-list-link sign-link" href="/sign.html"
+            >Zaregistrovat se</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Jídelníček PowerMove</h1>
+        <p>
+          Správná strava je klíčem k dosažení vašich cílů. Připravili jsme pro
+          vás ukázkové recepty a informace o výživě, které vám pomohou vytvořit
+          vyvážený jídelníček
+        </p>
+      </section>
+      <section class="nutrition-info">
+        <h2>Výživové hodnoty: Základy</h2>
+        <ul>
+          <li>
+            <p><span>Bílkoviny:</span> Podporují růst svalů a regeneraci</p>
+          </li>
+          <li>
+            <p><span>Sacharidy:</span> Hlavní zdroj energie</p>
+          </li>
+          <li>
+            <p><span>Tuky:</span> Zajišťují vstřebávání vitamínů a energii</p>
+          </li>
+          <li>
+            <p>
+              <span>Kalorie:</span> Množství energie potřebné pro fungování těla
+            </p>
+          </li>
+        </ul>
+        <p>
+          <span>Tip:</span> Denní doporučený příjem závisí na vašem věku,
+          pohlaví, hmotnosti, a úrovni aktivity
+        </p>
+      </section>
+      <section class="recipes">
+        <h2>Ukázkové recepty</h2>
+        <article class="recipe">
+          <h3>Kuřecí prsa s rýží a zeleninou</h3>
+          <img
+            src="./imgs/jidelnicek/kureci-prsa.jpg"
+            alt="Kuřecí prsa s rýží a zeleninou"
+            width="300"
+          />
+          <p>
+            <span>Porce:</span> 1 <br />
+            <span>Kalorie:</span> 450 kcal <br />
+            <span>Bílkoviny:</span> 40 g <br />
+            <span>Sacharidy:</span> 50 g <br />
+            <span>Tuky:</span> 10 g
+          </p>
+          <p><span>Ingredience:</span></p>
+          <ul>
+            <li><p>150 g kuřecích prsou</p></li>
+            <li><p>50 g basmati rýže</p></li>
+            <li>
+              <p>100 g zeleniny dle výběru (např. brokolice, paprika, mrkev)</p>
+            </li>
+            <li><p>1 lžička olivového oleje</p></li>
+          </ul>
+          <p><span>Postup:</span></p>
+          <ol>
+            <li>
+              <p>Kuřecí prsa osolte a opepřete, poté orestujte na pánvi</p>
+            </li>
+            <li><p>Rýži uvařte dle návodu na obalu</p></li>
+            <li>
+              <p>Zeleninu orestujte na olivovém oleji nebo uvařte v páře</p>
+            </li>
+            <li><p>Podávejte kuřecí prsa s rýží a zeleninou</p></li>
+          </ol>
+        </article>
+        <article class="recipe">
+          <h3>Proteinové palačinky</h3>
+          <img
+            src="./imgs/jidelnicek/proteinove-palacinky.jpg"
+            alt="Proteinové palačinky"
+            width="300"
+          />
+          <p>
+            <span>Porce:</span> 2 <br />
+            <span>Kalorie:</span> 300 kcal <br />
+            <span>Bílkoviny:</span> 25 g <br />
+            <span>Sacharidy:</span> 30 g <br />
+            <span>Tuky:</span> 5 g
+          </p>
+          <p><span>Ingredience:</span></p>
+          <ul>
+            <li>
+              <p>1 odměrka proteinového prášku (vanilkový nebo čokoládový)</p>
+            </li>
+            <li><p>50 g ovesných vloček</p></li>
+            <li><p>1 vejce</p></li>
+            <li><p>100 ml mléka nebo rostlinného nápoje</p></li>
+            <li><p>Špetka skořice</p></li>
+          </ul>
+          <p><span>Postup:</span></p>
+          <ol>
+            <li><p>Smíchejte všechny ingredience do hladkého těsta</p></li>
+            <li>
+              <p>Na pánvi rozehřejte malé množství oleje a tvořte palačinky</p>
+            </li>
+            <li><p>Podávejte s čerstvým ovocem nebo jogurtem</p></li>
+          </ol>
+        </article>
+      </section>
+      <section class="tips">
+        <h2>Tipy pro zdravé stravování</h2>
+        <ul>
+          <li><p>Jezte pravidelně a nevynechávejte snídani</p></li>
+          <li><p>Přidávejte do jídelníčku dostatek zeleniny a ovoce</p></li>
+          <li>
+            <p>Dbejte na dostatečný příjem vody – minimálně 2 litry denně</p>
+          </li>
+          <li><p>Vyhýbejte se průmyslově zpracovaným potravinám</p></li>
+          <li>
+            <p>
+              Plánujte si jídelníček předem, aby vám nechyběly potřebné živiny
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
