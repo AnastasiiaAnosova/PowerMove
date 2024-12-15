@@ -105,7 +105,7 @@ body {
 
 .hero-section {
     height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/main.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/imgs/main.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,7 +195,7 @@ body {
 }
 
 .courses-section {
-    height: 880px;
+    height: 900px;
     background-color: var(--primary-color);
     padding-top: 30px;
     padding-left: 40px;
@@ -211,6 +211,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 34px;
     margin-left: 40px;
     justify-content: space-evenly;
     margin-bottom: 40px;
@@ -281,85 +282,88 @@ body {
     font-family: var(--text-font-family);
 }
 
-/* .connect-section {
-    height: 400px;
-    background-color: var(--primary-color);
-    padding-top: 30px;
-    padding-left: 40px;
-    color: var(--secondary-color);
-    display: flex;
-    gap: 40px;
-}
-
-.connect-description {
-    width: 500px;
-}
-
-.connect-text {
-    margin-top: 20px;
-    font-size: 26px;
-    width: 980px;
-} */
-
 .connect-section {
     height: auto;
-    /* Dynamická výška podle obsahu */
-    padding: 40px 20px;
-    /* Vyvážené odsazení pro vršek i boky */
     background-color: var(--primary-color);
+    padding: 40px 20px;
     color: var(--secondary-color);
+}
+
+.connect-div {
     display: flex;
-    align-items: center;
-    /* Vertikální zarovnání */
-    justify-content: space-between;
-    /* Prostor mezi textem a obrázkem */
-    gap: 20px;
-    /* Menší mezera mezi prvky */
-    flex-wrap: wrap;
-    /* Zajišťuje, že obsah bude dobře fungovat na menších obrazovkách */
+    justify-content: center;
+    gap: 124px;
 }
 
 .connect-description {
-    max-width: 500px;
-    /* Omezte šířku textového bloku */
-    flex: 1;
-    /* Umožní adaptivní velikost */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    justify-content: center;
 }
 
-.connect-text {
-    margin-top: 20px;
-    font-size: 20px;
-    /* Upravte velikost pro lepší čitelnost */
-    line-height: 1.5;
-    /* Příjemnější mezera mezi řádky */
-}
-
-.button {
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-.button:hover {
+.footer {
+    padding: 20px 60px;
     background-color: var(--secondary-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-contact-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-list {
+    margin-top: 5px;
+}
+
+.contact-list-link {
+    color: var(--primary-color);
+    transition: color 0.3s;
+    margin-bottom: 10px;
+}
+
+.contact-list-link:hover, .contact-list-link:focus {
     color: var(--accent-color);
 }
 
-.img {
-    max-width: 600px;
-    /* Maximální šířka obrázku */
-    width: 100%;
-    /* Adaptivní šířka */
+.location {
+    width: 400px;
+    height: 300px;
     border-radius: 8px;
-    /* Kulaté rohy obrázku */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Jemný stín pro lepší efekt */
-    object-fit: cover;
-    /* Zajistí správný poměr obrázku */
 }
+
+.social-list {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-list-link:hover,.social-list-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-list-link svg {
+    fill: var(--primary-color);
+    /* width: 32px;
+    height: 32px; */
+}
+
+
