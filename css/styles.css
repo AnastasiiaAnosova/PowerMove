@@ -59,7 +59,11 @@ body {
 }
 
 .logo:hover .logo-path {
-    fill: #FF7F11;
+    fill: var(--accent-color);
+}
+
+.accent {
+    color: var(--accent-color);
 }
 
 .menu-list {

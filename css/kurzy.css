@@ -1,0 +1,66 @@
+.course-detail {
+    padding: 20px 40px;
+    background-color: var(--text-color);
+}
+
+.main-title {
+    padding-top: 0;
+    color: var(--accent-color);
+}
+
+.text {
+    margin: 10px 0 10px 0;
+    width: 90%;
+    text-align: start;
+    color: var(--secondary-color);
+}
+
+.list-courses-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.list-courses-detail-item {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.list-courses-detail-description {
+    width: 420px;
+    font-family: var(--text-font-family);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+.row {
+    font-family: var(--main-font-family);
+    color: var(--accent-color);
+}
+
+.list-courses-detail-item:hover, .list-courses-detail-item:focus {
+    transform: scale(1.02);
+}
+
+.list-courses-detail-item:nth-child(odd) {
+    justify-self: start;
+}
+
+.list-courses-detail-item:nth-child(even) {
+    justify-self: end;
+}
+
+.list-courses-detail-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}

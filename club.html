@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/club.css" />
   </head>
   <body>
     <header class="header">
@@ -67,138 +68,276 @@
       </nav>
     </header>
     <main>
-      <section class="histori">
-        <h1>PowerMove</h1>
-        <p>
-          Vítejte v PowerMove Klubu – místě, kde váš pohyb dostane nový rozměr.
-          Naším cílem je podporovat zdravý životní styl a přinášet radost z
-          pohybu každému, bez ohledu na věk nebo fyzickou kondici. Díky
-          rozmanité nabídce kurzů a programů pomáháme členům dosahovat jejich
-          individuálních cílů, ať už jde o zlepšení kondice, nabírání svalové
-          hmoty, nebo prosté radosti z aktivního života
+      <section class="history">
+        <h1 class="main-title">PowerMove</h1>
+        <p class="text">
+          Vítejte v <span class="accent">PowerMove</span> Klubu – místě, kde váš
+          pohyb dostane nový rozměr. Naším cílem je podporovat zdravý životní
+          styl a přinášet radost z pohybu každému, bez ohledu na věk nebo
+          fyzickou kondici. Díky rozmanité nabídce kurzů a programů pomáháme
+          členům dosahovat jejich individuálních cílů, ať už jde o zlepšení
+          kondice, nabírání svalové hmoty, nebo prosté radosti z aktivního
+          života
         </p>
-        <p>Historie našeho klubu</p>
-        PowerMove Klub vznikl v roce 2022 z jednoduché vize – vytvořit prostor,
-        kde se lidé budou cítit motivováni, podporováni a zároveň součástí
-        komunity. Začali jsme s malým týmem nadšenců a jednou tělocvičnou, ale
-        díky odhodlání a vášni jsme dnes místem, které spojuje stovky sportovců
-        všech věkových kategorií. Naše tradice a zkušenosti nás vedou k tomu,
-        abychom neustále inovovali a přizpůsobovali naše kurzy potřebám
-        moderního životního stylu
+        <p class="secondary-title">Historie našeho klubu</p>
+        <p class="text">
+          <span class="accent">PowerMove</span> Klub vznikl v roce 2022 z
+          jednoduché vize – vytvořit prostor, kde se lidé budou cítit
+          motivováni, podporováni a zároveň součástí komunity. Začali jsme s
+          malým týmem nadšenců a jednou tělocvičnou, ale díky odhodlání a vášni
+          jsme dnes místem, které spojuje stovky sportovců všech věkových
+          kategorií. Naše tradice a zkušenosti nás vedou k tomu, abychom
+          neustále inovovali a přizpůsobovali naše kurzy potřebám moderního
+          životního stylu
+        </p>
       </section>
       <section class="team">
-        <h2>Náš tým</h2>
-        <p>
+        <h2 class="secondary-title title-dark">Náš tým</h2>
+        <p class="text-dark">
           V PowerMove Klubu se pyšníme týmem zkušených trenérů, kteří se starají
           o vaše pokroky a pohodlí. Každý z nich je odborníkem ve svém oboru a
           rád vám pomůže dosáhnout vašich cílů
         </p>
-        <ul>
-          <li>
-            <img src="" alt="Martin Novák je trenér pro silový trénink" />
-            <h3>Martin Novák</h3>
-            <p>Specialista na silový trénink a budování svalové hmoty</p>
-          </li>
-          <li>
+        <ul class="team-list">
+          <li class="team-list-item">
             <img
-              src=""
+              class="img"
+              width="300"
+              src="/imgs/team/martin-novak.jpg"
+              alt="Martin Novák je trenér pro silový trénink"
+            />
+            <h3 class="team-name">Martin Novák</h3>
+            <p class="team-list-specialization">
+              Specialista na silový trénink a budování svalové hmoty
+            </p>
+          </li>
+          <li class="team-list-item">
+            <img
+              class="img"
+              width="300"
+              src="/imgs/team/petra-dvorakova.jpg"
               alt="Petra Dvořáková je trenérka pro dětskou gymnastiku"
             />
-            <h3>Petra Dvořáková</h3>
-            <p>Expertka na dětskou gymnastiku a rozvoj koordinace</p>
+            <h3 class="team-name">Petra Dvořáková</h3>
+            <p class="team-list-specialization">
+              Expertka na dětskou gymnastiku a rozvoj koordinace
+            </p>
           </li>
-          <li>
+          <li class="team-list-item">
             <img
-              src=""
+              class="img"
+              width="300"
+              src="/imgs/team/tomas-cerny.jpg"
               alt="Tomáš Černý je instruktor jógy a funkčního tréninku"
             />
-            <h3>Tomáš Černý</h3>
-            <p>
+            <h3 class="team-name">Tomáš Černý</h3>
+            <p class="team-list-specialization">
               Instruktor jógy a funkčního tréninku, zaměřený na flexibilitu a
               core
             </p>
           </li>
-          <li>
-            <img src="" alt="Specialista na kondiční trénink" />
-            <h3>Jana Hlaváčová</h3>
-            <p>Odbornice na kardio trénink a zlepšení celkové kondice</p>
+          <li class="team-list-item">
+            <img
+              class="img"
+              width="300"
+              src="/imgs/team/jana-hlavacova.jpg"
+              alt="Jana Hlaváčová je specialista na kondiční trénink"
+            />
+            <h3 class="team-name">Jana Hlaváčová</h3>
+            <p class="team-list-specialization">
+              Odbornice na kardio trénink a zlepšení celkové kondice
+            </p>
           </li>
-          <li>
-            <img src="" alt="Trenér pro bojové sporty" />
-            <h3>David Kučera</h3>
-            <p>Trenér bojových sportů, včetně boxu a kickboxu</p>
+          <li class="team-list-item">
+            <img
+              class="img"
+              width="300"
+              src="/imgs/team/david-kucera.jpg"
+              alt="Trenér pro bojové sporty"
+            />
+            <h3 class="team-name">David Kučera</h3>
+            <p class="team-list-specialization">
+              Trenér bojových sportů, včetně boxu a kickboxu
+            </p>
           </li>
-          <li>
-            <img src="" alt="Nutriční specialista" />
-            <h3>Kateřina Malá</h3>
-            <p>
+          <li class="team-list-item">
+            <img
+              class="img"
+              width="300"
+              src="/imgs/team/katerina-mala.jpg"
+              alt="Nutriční specialista"
+            />
+            <h3 class="team-name">Kateřina Malá</h3>
+            <p class="team-list-specialization">
               Nutriční specialistka, která vám pomůže sestavit ideální
               jídelníček
             </p>
           </li>
         </ul>
-        <p>
+        <p class="main-text">
           Ať už jste začátečník, nebo zkušený sportovec, náš tým je tady pro
           vás!
         </p>
       </section>
-      <section>
-        <h2>Naše filozofie</h2>
-        <p>
+      <section class="review">
+        <h2 class="secondary-title">Naše filozofie</h2>
+        <p class="text">
           Věříme, že každý má potenciál dosáhnout svých cílů, a naší úlohou je
-          pomoci vám na této cestě. V PowerMove Klubu klademe důraz na
+          pomoci vám na této cestě. V
+          <span class="accent">PowerMove</span> Klubu klademe důraz na
           individuální přístup, podporu členů a vytváření přátelského prostředí,
           kde se budete cítit dobře
         </p>
-        <h2>Co o nás říkají naši členové</h2>
-        <ul>
-          <li>
-            <p>
+        <h3 class="secondary-title">Co o nás říkají naši členové</h3>
+        <ul class="review-list">
+          <li class="review-list-item">
+            <p class="review-list-text">
               Díky PowerMove Klubu jsem zlepšil svou kondici a našel nové
               přátele. Trenéři jsou skvělí a vždy mě motivují k lepším výkonům!
             </p>
-            <p>Martin Mladý, člen klubu 2 roky</p>
+            <p class="review-list-name">Martin Mladý, člen klubu 2 roky</p>
           </li>
-          <li>
-            <p>
+          <li class="review-list-item">
+            <p class="review-list-text">
               Naše dcera miluje dětskou gymnastiku a pokaždé se těší na další
               trénink. Vidíme na ní velké pokroky a hlavně radost z pohybu. Moc
               děkujeme za skvělý přístup!
             </p>
-            <p>Petra Králová, maminka malé gymnastky</p>
+            <p class="review-list-name">
+              Petra Králová, maminka malé gymnastky
+            </p>
           </li>
-          <li>
-            <p>
+          <li class="review-list-item">
+            <p class="review-list-text">
               Po operaci kolene jsem hledala místo, kde by mi pomohli s návratem
               do formy. PowerMove Klub byl skvělou volbou! Individuální přístup
               a rehabilitační cvičení mi umožnily rychlý návrat ke sportu.
             </p>
-            <p>Jana Novotná, členka klubu</p>
+            <p class="review-list-name">Jana Novotná, členka klubu</p>
           </li>
-          <li>
-            <p>
+          <li class="review-list-item">
+            <p class="review-list-text">
               Jsem nadšený z kurzů kickboxu! David je výborný trenér, který
               dokáže vytvořit přátelskou atmosféru, ale zároveň mě posouvá
               každým tréninkem dál.
             </p>
-            <p>Tomáš Vlček, člen klubu 1 rok</p>
+            <p class="review-list-name">Tomáš Vlček, člen klubu 1 rok</p>
           </li>
-          <li>
-            <p>
+          <li class="review-list-item">
+            <p class="review-list-text">
               PowerMove Klub je místo, kde se cítím jako doma. Kombinace
               kvalitních tréninků, přátelské komunity a moderního vybavení mě
               přesvědčila, že jsem tu správně.
             </p>
-            <p>Kateřina Horáková, členka klubu 2 roky</p>
+            <p class="review-list-name">
+              Kateřina Horáková, členka klubu 2 roky
+            </p>
           </li>
         </ul>
-        <p>
-          Přidejte se k PowerMove Klubu ještě dnes a objevte radost z pohybu!
-          Pro více informací nás neváhejte kontaktovat
+        <p class="review-secondary-text">
+          Přidejte se k <span class="accent">PowerMove</span> Klubu ještě dnes a
+          objevte radost z pohybu! Pro více informací nás neváhejte kontaktovat
         </p>
-        <button>Zaregistrujte se nyní</button>
+        <div class="center-link">
+          <a href="/sign.html" class="button">Zaregistrujte se nyní</a>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer footer-dark">
+      <div class="footer-content">
+        <div class="footer-contact-div">
+          <address class="footer-contact">
+            <p>Naše kontakty:</p>
+            <ul class="contact-list">
+              <li class="contact-list-item">
+                <a class="contact-list-link" href="mailto:info@powermove.com"
+                  >info@powermove.com</a
+                >
+              </li>
+              <li>
+                <a class="contact-list-link" href="tel:+420123456789"
+                  >+420 123 456 789</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a class="social-list-link" href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M16,2c-7.732,0-14,6.268-14,14,0,6.566,4.52,12.075,10.618,13.588v-9.31h-2.887v-4.278h2.887v-1.843c0-4.765,2.156-6.974,6.835-6.974,.887,0,2.417,.174,3.043,.348v3.878c-.33-.035-.904-.052-1.617-.052-2.296,0-3.183,.87-3.183,3.13v1.513h4.573l-.786,4.278h-3.787v9.619c6.932-.837,12.304-6.74,12.304-13.897,0-7.732-6.268-14-14-14Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M10.202,2.098c-1.49,.07-2.507,.308-3.396,.657-.92,.359-1.7,.84-2.477,1.619-.776,.779-1.254,1.56-1.61,2.481-.345,.891-.578,1.909-.644,3.4-.066,1.49-.08,1.97-.073,5.771s.024,4.278,.096,5.772c.071,1.489,.308,2.506,.657,3.396,.359,.92,.84,1.7,1.619,2.477,.779,.776,1.559,1.253,2.483,1.61,.89,.344,1.909,.579,3.399,.644,1.49,.065,1.97,.08,5.771,.073,3.801-.007,4.279-.024,5.773-.095s2.505-.309,3.395-.657c.92-.36,1.701-.84,2.477-1.62s1.254-1.561,1.609-2.483c.345-.89,.579-1.909,.644-3.398,.065-1.494,.081-1.971,.073-5.773s-.024-4.278-.095-5.771-.308-2.507-.657-3.397c-.36-.92-.84-1.7-1.619-2.477s-1.561-1.254-2.483-1.609c-.891-.345-1.909-.58-3.399-.644s-1.97-.081-5.772-.074-4.278,.024-5.771,.096m.164,25.309c-1.365-.059-2.106-.286-2.6-.476-.654-.252-1.12-.557-1.612-1.044s-.795-.955-1.05-1.608c-.192-.494-.423-1.234-.487-2.599-.069-1.475-.084-1.918-.092-5.656s.006-4.18,.071-5.656c.058-1.364,.286-2.106,.476-2.6,.252-.655,.556-1.12,1.044-1.612s.955-.795,1.608-1.05c.493-.193,1.234-.422,2.598-.487,1.476-.07,1.919-.084,5.656-.092,3.737-.008,4.181,.006,5.658,.071,1.364,.059,2.106,.285,2.599,.476,.654,.252,1.12,.555,1.612,1.044s.795,.954,1.051,1.609c.193,.492,.422,1.232,.486,2.597,.07,1.476,.086,1.919,.093,5.656,.007,3.737-.006,4.181-.071,5.656-.06,1.365-.286,2.106-.476,2.601-.252,.654-.556,1.12-1.045,1.612s-.955,.795-1.608,1.05c-.493,.192-1.234,.422-2.597,.487-1.476,.069-1.919,.084-5.657,.092s-4.18-.007-5.656-.071M21.779,8.517c.002,.928,.755,1.679,1.683,1.677s1.679-.755,1.677-1.683c-.002-.928-.755-1.679-1.683-1.677,0,0,0,0,0,0-.928,.002-1.678,.755-1.677,1.683m-12.967,7.496c.008,3.97,3.232,7.182,7.202,7.174s7.183-3.232,7.176-7.202c-.008-3.97-3.233-7.183-7.203-7.175s-7.182,3.233-7.174,7.203m2.522-.005c-.005-2.577,2.08-4.671,4.658-4.676,2.577-.005,4.671,2.08,4.676,4.658,.005,2.577-2.08,4.671-4.658,4.676-2.577,.005-4.671-2.079-4.676-4.656h0"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M25.873,6.069c-2.619-2.623-6.103-4.067-9.814-4.069C8.411,2,2.186,8.224,2.184,15.874c-.001,2.446,.638,4.833,1.852,6.936l-1.969,7.19,7.355-1.929c2.026,1.106,4.308,1.688,6.63,1.689h.006c7.647,0,13.872-6.224,13.874-13.874,.001-3.708-1.44-7.193-4.06-9.815h0Zm-9.814,21.347h-.005c-2.069,0-4.099-.557-5.87-1.607l-.421-.25-4.365,1.145,1.165-4.256-.274-.436c-1.154-1.836-1.764-3.958-1.763-6.137,.003-6.358,5.176-11.531,11.537-11.531,3.08,.001,5.975,1.202,8.153,3.382,2.177,2.179,3.376,5.077,3.374,8.158-.003,6.359-5.176,11.532-11.532,11.532h0Zm6.325-8.636c-.347-.174-2.051-1.012-2.369-1.128-.318-.116-.549-.174-.78,.174-.231,.347-.895,1.128-1.098,1.359-.202,.232-.405,.26-.751,.086-.347-.174-1.464-.54-2.788-1.72-1.03-.919-1.726-2.054-1.929-2.402-.202-.347-.021-.535,.152-.707,.156-.156,.347-.405,.52-.607,.174-.202,.231-.347,.347-.578,.116-.232,.058-.434-.029-.607-.087-.174-.78-1.88-1.069-2.574-.281-.676-.567-.584-.78-.595-.202-.01-.433-.012-.665-.012s-.607,.086-.925,.434c-.318,.347-1.213,1.186-1.213,2.892s1.242,3.355,1.416,3.587c.174,.232,2.445,3.733,5.922,5.235,.827,.357,1.473,.571,1.977,.73,.83,.264,1.586,.227,2.183,.138,.666-.1,2.051-.839,2.34-1.649,.289-.81,.289-1.504,.202-1.649s-.318-.232-.665-.405h0Z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                >
+                  <path
+                    d="M31.331,8.248c-.368-1.386-1.452-2.477-2.829-2.848-2.496-.673-12.502-.673-12.502-.673,0,0-10.007,0-12.502,.673-1.377,.37-2.461,1.462-2.829,2.848-.669,2.512-.669,7.752-.669,7.752,0,0,0,5.241,.669,7.752,.368,1.386,1.452,2.477,2.829,2.847,2.496,.673,12.502,.673,12.502,.673,0,0,10.007,0,12.502-.673,1.377-.37,2.461-1.462,2.829-2.847,.669-2.512,.669-7.752,.669-7.752,0,0,0-5.24-.669-7.752ZM12.727,20.758V11.242l8.364,4.758-8.364,4.758Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p>Kde nás najdete</p>
+          <iframe
+            class="location"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13574.59264517267!2d15.779929624091615!3d50.03736971170103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2scz!4v1734255238296!5m2!1suk!2scz"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <p class="footer-text">
+        &copy; 2024 PowerMove Klub. Všechna práva vyhrazena.
+      </p>
+    </footer>
   </body>
 </html>
