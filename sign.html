@@ -4,6 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PowerMove</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Audiowide&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/sign.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="register-container">
+      <div class="register-box">
+        <h1>Registrace</h1>
+        <form action="/register" method="POST">
+          <div class="input-group">
+            <label for="full-name">Celé jméno</label>
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              placeholder="Vaše jméno a příjmení"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Zadejte svůj email"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Heslo</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Zadejte své heslo"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="course">Vyberte kurz</label>
+            <select id="course" name="course" required>
+              <option value="">-- Vyberte kurz --</option>
+              <option value="fitness">Fitness pro dospělé</option>
+              <option value="gymnastics">Dětská gymnastika</option>
+              <option value="strength-training">Silový trénink</option>
+              <option value="yoga">Jóga a relaxace</option>
+              <option value="martial-arts">Bojové sporty</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Registrovat se</button>
+        </form>
+        <p class="login-link">
+          Už máte účet? <a href="/login">Přihlaste se</a>
+        </p>
+      </div>
+    </section>
+  </body>
 </html>

@@ -1,0 +1,45 @@
+.main-title {
+    padding-top: 0;
+}
+
+.list-articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.list-articles-item {
+    border-bottom: 3px solid var(--primary-color);
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.list-articles-item p {
+    font-family: var(--text-font-family);
+    margin-bottom: 4px;
+    padding-left: 20px;
+}
+
+.list-articles-title, .list-articles-item p {
+    width: 90%;
+}
+
+.blog-list-link {
+    padding-left: 20px;
+}
+
+.footer-dark {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.footer-dark .contact-list-link {
+    color: var(--secondary-color);
+}
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+    color: var(--accent-color);
+}

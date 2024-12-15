@@ -1,0 +1,79 @@
+.main-title {
+    padding-top: 0;
+}
+
+.main-text {
+    width: 80%;
+    text-align: start;
+}
+
+.vyziva-section {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.tips-list {
+    list-style: inherit;
+    margin-left: 20px;
+}
+
+.nutrition-list {
+    width: 90%;
+}
+
+.nutrition-info,
+.tips {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.text {
+    color: var(--secondary-color);
+    font-family: var(--text-font-family);
+}
+
+.recipes {
+    background-color: var(--secondary-color);
+}
+
+.recipe-div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.recipe {
+    border-bottom: 3px solid var(--primary-color);
+    padding: 10px 0;
+}
+
+.recipe-title {
+    margin-bottom: 10px;
+}
+.ingredience-list {
+    list-style: inherit;
+}
+
+.recipe ul,
+.recipe ol {
+    margin: 10px 0 10px 20px;
+}
+
+.footer-dark {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.footer-dark .contact-list-link {
+    color: var(--secondary-color);
+}
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+    color: var(--accent-color);
+}

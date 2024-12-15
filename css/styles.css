@@ -120,6 +120,11 @@ body {
     color: var(--accent-color);
 }
 
+.section {
+    padding: 20px 40px;
+    background-color: var(--secondary-color);
+}
+
 .main-title {
     padding-top: 80px;
     font-family: var(--accent-font-family);
@@ -366,8 +371,6 @@ body {
 
 .social-list-link svg {
     fill: var(--primary-color);
-    /* width: 32px;
-    height: 32px; */
 }
 
 
