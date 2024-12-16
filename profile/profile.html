@@ -1,42 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Můj profil PowerMove</title>
+    <title>Profil PowerMove</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Audiowide&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/profile.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/profil">Můj profil</a></li>
-          <li><a href="/index.html">Odhlásit</a></li>
+    <header class="header">
+      <nav class="menu">
+        <a class="logo" href="/index.html">
+          <svg
+            class="logo-svg"
+            width="40"
+            height="40"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="logo-path"
+              d="M21.37 36C22.82 30.75 27.89 27 33.73 27.62C39.29 28.21 43.71 32.9 43.99 38.48C44.06 39.95 43.86 41.36 43.43 42.67C43.17 43.47 42.39 44 41.54 44H11.7584C6.71004 44 2.92371 39.3814 3.91377 34.4311L9.99994 4H21.9999L25.9999 11L17.43 17.13L14.9999 14"
+              stroke="#FF7F11"
+              stroke-width="2"
+              stroke-miterlimit="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              class="logo-path"
+              d="M17.4399 17.13L22 34"
+              stroke="#FF7F11"
+              stroke-width="2"
+              stroke-miterlimit="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <ul class="menu-list profile-nav">
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="#user-info">Údaje</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="#goals-progress">Pokrok</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="#calendar">Kalendář</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="#jidelnicek">Jídelníček</a>
+          </li>
         </ul>
+        <div class="sign-login-links">
+          <a class="login-link" href="">Odhlásit se</a>
+        </div>
       </nav>
     </header>
-    <main>
-      <section class="personal-info">
-        <h2>Osobní informace</h2>
-        <img src="" alt="Moje foto" />
-        <p>Uživatelské jméno: ama</p>
-        <p>E-mail: ama@gmail.com</p>
-        <p>Členství od: 12.09.2023</p>
-        <p>Můj kurz: Jóga a relaxace</p>
+    <main class="profile-main">
+      <section id="user-info" class="profile-section">
+        <img src="/imgs/profile/avatar.svg" alt="Avatar photo" />
+        <ul class="user-details">
+          <li>
+            <p>Jméno: <span class="accent">Martin Novák</span></p>
+          </li>
+          <li>
+            <p>Email: <span class="accent">matrinnovak@gmail.com</span></p>
+          </li>
+          <li>
+            <p>Registrován: <span class="accent">15.06.2023</span></p>
+          </li>
+          <li>
+            <p>Vybraný kurz: <span class="accent">Fitness pro dospělé</span></p>
+          </li>
+        </ul>
       </section>
-      <section class="activity">
-        <h2>Moje aktivity</h2>
-        <ul>
-          <li><a href="#tre">Moje tréninky</a></li>
-          <li><a href="#">Moje úspěchy</a></li>
+      <section id="goals-progress" class="profile-section">
+        <h2 class="secondary-title">Cíle a pokrok</h2>
+        <p class="text">Zde můžete sledovat svůj pokrok a dosažené cíle.</p>
+        <table class="progress-table">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Hmotnost (kg)</th>
+              <th>Procento tuku (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01.12.2024</td>
+              <td>75</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>01.01.2025</td>
+              <td>74</td>
+              <td>17.5</td>
+            </tr>
+            <tr>
+              <td>01.12.2024</td>
+              <td>75</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>01.01.2025</td>
+              <td>74</td>
+              <td>17.5</td>
+            </tr>
+            <tr>
+              <td>01.12.2024</td>
+              <td>75</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>01.01.2025</td>
+              <td>74</td>
+              <td>17.5</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="calendar" class="profile-section calendar-section">
+        <h2 class="secondary-title">Kalendář tréninků</h2>
+        <div class="calendar">
+          <div class="calendar-header">
+            <button id="prevMonth">←</button>
+            <h3 id="currentMonth">Prosinec 2024</h3>
+            <button id="nextMonth">→</button>
+          </div>
+          <table class="calendar-grid">
+            <thead>
+              <tr>
+                <th>Po</th>
+                <th>Út</th>
+                <th>St</th>
+                <th>Čt</th>
+                <th>Pá</th>
+                <th>So</th>
+                <th>Ne</th>
+              </tr>
+            </thead>
+            <tbody id="calendarDays">
+              <tr>
+                <td>Posilovna</td>
+                <td></td>
+                <td>Domácí cvičení</td>
+                <td></td>
+                <td></td>
+                <td>Posilovna</td>
+                <td>Volno</td>
+              </tr>
+              <tr>
+                <td>Posilovna</td>
+                <td>Běh</td>
+                <td></td>
+                <td>Silový trénink</td>
+                <td></td>
+                <td>Domácí cvičení</td>
+                <td>Odpočinek</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Posilovna</td>
+                <td></td>
+                <td></td>
+                <td>Běh</td>
+                <td></td>
+                <td>Volno</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="jidelnicek" class="profile-section">
+        <h2 class="secondary-title">Můj jídelníček</h2>
+      </section>
+
+      <section id="resources" class="profile-section">
+        <h2 class="secondary-title">Zdroje</h2>
+        <ul class="resources-list">
+          <li><a href="#">Instruktážní video: Základy dřepů</a></li>
+          <li><a href="#">Tréninkový plán: Začátečníci</a></li>
+          <li><a href="#">E-book: Stravování pro sportovce</a></li>
         </ul>
       </section>
     </main>
+
+    <footer class="profile-footer">
+      <div class="container">
+        <p>&copy; 2024 Fitness App. Všechna práva vyhrazena.</p>
+      </div>
+    </footer>
   </body>
 </html>
-
-<!-- Členská sekce (po přihlášení)
-Osobní profil:
-Přehled vlastních cílů, pokroků a výsledků.
-Tabulka měřených hodnot (hmotnost, výkon, procento tuku apod.).
-Kalendář: Přehled naplánovaných událostí – tréninky, turnaje, workshopy.
-Zdroje: Přístup k instruktážním videím a tréninkovým plánům. -->

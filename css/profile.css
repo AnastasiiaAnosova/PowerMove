@@ -1,0 +1,161 @@
+.profile-main {
+    background-color: var(--secondary-color);
+}
+.profile-section {
+    padding: 0 30px;
+    padding-top: 30px;
+}
+
+#user-info {
+    display: flex;
+    gap: 40px;
+}
+
+.progress-table {
+    margin-bottom: 30px;
+}
+
+.progress-table th {
+    padding-left: 4px;
+}
+
+.progress-table td {
+    text-align: right;
+}
+
+.calendar-section {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding-bottom: 30px;
+}
+
+.calendar {
+    margin: 0 auto;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.calendar-grid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-grid th,
+.calendar-grid td {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.calendar-grid td {
+    height: 80px;
+}
+
+.calendar-grid td.active {
+    background-color: #cce5ff;
+    font-weight: bold;
+}
+
+.calendar {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.calendar-header button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.calendar-header button:hover {
+    background-color: var(--primary-dark);
+}
+
+.calendar-grid {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.calendar-grid th,
+.calendar-grid td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.calendar-grid th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.calendar-grid td {
+    background-color: #fff;
+}
+
+.calendar-grid td:nth-child(6),
+.calendar-grid td:nth-child(7) {
+    background-color: #f2f2f2;
+    /* Zvýraznění víkendů */
+}
+
+.calendar-grid td:empty {
+    background-color: #eaeaea;
+    /* Prázdné buňky */
+}
+
+@media (max-width: 768px) {
+
+    .calendar-grid th,
+    .calendar-grid td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .calendar-header button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-grid {
+        font-size: 12px;
+    }
+
+    .calendar-header h3 {
+        font-size: 16px;
+    }
+}
