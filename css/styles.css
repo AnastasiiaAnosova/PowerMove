@@ -468,10 +468,11 @@ body {
         text-align: center;
     }
 
-    /* .list-courses {
-        margin: 0 180px;
-        margin-bottom: 40px;
-    } */
+    .list-courses {
+        max-width: 1384px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 1025px) {
