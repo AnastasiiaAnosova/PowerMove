@@ -77,31 +77,37 @@
         padding: 20px 40px;
     }
 
-        .list-courses-detail {
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    
-        .list-courses-detail-item:hover,
-        .list-courses-detail-item:focus {
-            transform: scale(1.02);
-        }
-    
-        .list-courses-detail-item:nth-child(odd) {
-            justify-self: start;
-        }
-    
-        .list-courses-detail-item:nth-child(even) {
-            justify-self: end;
-        }
-        .list-courses-detail-description { 
-            width: 420px; 
-        }
+    .list-courses-detail {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {}
 
 @media (min-width: 1025px) {
+    .list-courses-detail {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .list-courses-detail-item:hover,
+    .list-courses-detail-item:focus {
+        transform: scale(1.02);
+    }
+    
+    .list-courses-detail-item:nth-child(odd) {
+        justify-self: start;
+    }
+    
+    .list-courses-detail-item:nth-child(even) {
+        justify-self: end;
+    }
+    
+    .list-courses-detail-description {
+        width: 420px;
+    }
+
    .list-courses-detail-item {
     gap: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

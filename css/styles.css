@@ -135,7 +135,6 @@ body {
     padding: 6px;
     border-radius: 16px;
     color: var(--accent-color);
-    margin-left: 30px;
 }
 
 .button-detail:hover,
@@ -235,6 +234,7 @@ body {
     .connect-div {
         flex-direction: column;
         gap: 30px;
+        align-items: center;
     }
 
     .img {
@@ -317,7 +317,7 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 768px) and (max-width: 820px) {
     .sign-login-links {
         display: block;
         margin-left: 40px;
@@ -332,19 +332,21 @@ body {
     .menu-list-link:focus {
         padding: 4px 10px;
     }
+
+    .connect-div {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .main-title {
+        margin: 0 30px;
+        text-align: center;
+    }
 }
 
 
 @media (min-width: 800px) {
-    .header {
-            font-size: 24px;
-        }
-
-    .menu {
-        display: flex;
-        margin-left: 60px;
-        align-items: center;
-    }
     
     .menu-list {
         margin-left: 40px;
@@ -358,14 +360,12 @@ body {
     
     .menu-list-link:hover,
     .menu-list-link:focus {
-        padding: 12px;
         border-radius: 16px;
         color: var(--primary-color);
         background-color: var(--accent-color);
     }
     
     .login-link {
-        padding: 12px;
         border-radius: 16px;
         color: var(--primary-color);
         background-color: var(--accent-color);
@@ -383,6 +383,19 @@ body {
     .sign-link {
         margin-left: 14px;
     }
+
+    .sign-login-links {
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .list-courses {
+        margin-left: 40px;
+    }
+
+    .button-detail {
+        margin-left: 0;
+    }
 }
 
 @media (min-width: 768px) {
@@ -396,7 +409,7 @@ body {
     .main-text {
         margin-top: 20px;
         font-size: 26px;
-        width: 980px;
+        width: auto;
     }
 
     .main-buttons {
@@ -417,16 +430,12 @@ body {
     .courses-section {
         padding-top: 30px;
         padding-left: 40px;
-        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .list-courses {
         row-gap: 34px;
-        margin-left: 40px;
-    }
-
-    .button-detail {
-        margin-left: 30px;
+        margin-left: 0;
     }
 
     .blog-section {
@@ -437,10 +446,6 @@ body {
 
     .blog-list {
         width: 80%;
-    }
-
-    .connect-div {
-        gap: 124px;
     }
 
     .footer {
@@ -457,7 +462,36 @@ body {
     }
 }
 
+@media (min-width: 1024px) {
+    .main-title {
+        margin: 0 50px;
+        text-align: center;
+    }
+
+    /* .list-courses {
+        margin: 0 180px;
+        margin-bottom: 40px;
+    } */
+}
+
 @media (min-width: 1025px) {
+    .menu {
+        display: flex;
+        margin-left: 60px;
+        align-items: center;
+    }
+
+    .header {
+        font-size: 24px;
+    }
+
+    .main-text {
+        width: 980px;
+    }
+
+    .button-detail {
+        margin-left: 30px;
+    }
 }
 
 .section {
