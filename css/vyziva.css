@@ -77,3 +77,37 @@
 .contact-list-link:focus {
     color: var(--accent-color);
 }
+
+/* Mobily (do 768px) */
+@media (max-width: 768px) {
+    .main-title {
+        margin: 0;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .main-text {
+        margin: 0;
+        width: 100%;
+    }
+
+    .section {
+        padding: 20px 20px;
+    }
+
+    .vyziva-section {
+        flex-direction: column;
+    }
+
+    .recipe {
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (min-width: 1025px) {}

@@ -128,8 +128,27 @@
     color: var(--accent-color);
 }
 
+/* Mobily (do 768px) */
 @media (max-width: 768px) {
     .login-container {
         grid-template-columns: 1fr;
     }
+    .login-imgs {
+        display: none;
+    }
+    .login-container{
+        padding-left: 20px;
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
 }
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {}

@@ -45,7 +45,25 @@
             />
           </svg>
         </a>
-        <ul class="menu-list">
+        <button class="burger-menu" id="burgerMenu" aria-label="Menu">
+          <svg
+            id="burgerIcon"
+            width="30px"
+            height="30px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+              stroke="#FF7F11"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <ul class="menu-list" id="menuList">
           <li class="menu-list-item">
             <a class="menu-list-link" href="/club.html">O nás</a>
           </li>
@@ -353,7 +371,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="location-div">
           <p>Kde nás najdete</p>
           <iframe
             class="location"
@@ -371,5 +389,6 @@
         &copy; 2024 PowerMove Klub. Všechna práva vyhrazena.
       </p>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

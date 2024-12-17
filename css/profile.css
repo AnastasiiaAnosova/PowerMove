@@ -139,6 +139,10 @@
 
 @media (max-width: 768px) {
 
+    .calendar {
+        overflow-x: auto;
+    }
+
     .calendar-grid th,
     .calendar-grid td {
         padding: 8px;
